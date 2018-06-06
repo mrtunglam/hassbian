@@ -1,0 +1,434 @@
+2018-06-05 22:59:54 WARNING (MainThread) [homeassistant.setup] Setup of xiaomi_aqara is taking over 10 seconds.
+2018-06-05 22:59:54 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 22:59:54 ERROR (Thread-12) [xiaomi_gateway] No data in response from hub None
+2018-06-05 22:59:55 WARNING (MainThread) [homeassistant.components.switch] Setup of platform broadlink is taking over 10 seconds.
+2018-06-05 23:00:01 ERROR (Thread-2) [homeassistant.components.switch.broadlink] Failed to connect to device
+2018-06-05 23:00:04 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 23:00:14 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 23:00:24 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 23:00:34 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 23:00:44 ERROR (Thread-12) [xiaomi_gateway] Cannot connect to Gateway
+2018-06-05 23:59:07 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 00:18:34 ERROR (Thread-5) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 21, column 1
+2018-06-06 00:18:34 ERROR (MainThread) [homeassistant.components.group] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 21, column 1
+2018-06-06 00:19:09 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 00:20:40 ERROR (Thread-11) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 21, column 1
+2018-06-06 00:20:40 ERROR (MainThread) [homeassistant.components.group] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 21, column 1
+2018-06-06 00:20:46 ERROR (Thread-18) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 21, column 1
+2018-06-06 00:21:14 ERROR (Thread-19) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 21, column 1
+2018-06-06 00:21:57 ERROR (Thread-8) [homeassistant.util.yaml] while parsing a block collection
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 62, column 3
+expected <block end>, but found '?'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 67, column 3
+2018-06-06 00:25:42 ERROR (Thread-3) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 8, column 1
+2018-06-06 00:26:40 ERROR (Thread-13) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 8, column 1
+2018-06-06 00:28:57 ERROR (Thread-2) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 9, column 1
+2018-06-06 00:30:12 ERROR (Thread-7) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 9, column 1
+2018-06-06 00:30:31 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_protocol.py", line 381, in start
+    resp = await self._request_handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_app.py", line 322, in _handle
+    resp = await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_middlewares.py", line 88, in impl
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/static.py", line 68, in staticresource_middleware
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/real_ip.py", line 27, in real_ip_middleware
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/ban.py", line 68, in ban_middleware
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/auth.py", line 28, in auth_middleware
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/view.py", line 98, in handle
+    result = await result
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/config/core.py", line 24, in post
+    errors = yield from async_check_ha_config_file(request.app['hass'])
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/config.py", line 690, in async_check_ha_config_file
+    check_ha_config_file, hass)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/scripts/check_config.py", line 347, in check_ha_config_file
+    config = component.CONFIG_SCHEMA(config)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 267, in __call__
+    return self._compiled([], data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 587, in validate_dict
+    return base_validate(path, iteritems(data), out)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 379, in validate_mapping
+    cval = cvalue(key_path, value)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 769, in validate_callable
+    return schema(data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 267, in __call__
+    return self._compiled([], data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 587, in validate_dict
+    return base_validate(path, iteritems(data), out)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 379, in validate_mapping
+    cval = cvalue(key_path, value)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/validators.py", line 204, in _run
+    return self._exec(self._compiled, value, path)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/validators.py", line 282, in _exec
+    v = func(path, v)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 769, in validate_callable
+    return schema(data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 267, in __call__
+    return self._compiled([], data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 587, in validate_dict
+    return base_validate(path, iteritems(data), out)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 379, in validate_mapping
+    cval = cvalue(key_path, value)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/validators.py", line 204, in _run
+    return self._exec(self._compiled, value, path)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/validators.py", line 249, in _exec
+    return func(path, v)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 769, in validate_callable
+    return schema(data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/config_validation.py", line 177, in entity_ids
+    return [entity_id(ent_id) for ent_id in value]
+TypeError: 'bool' object is not iterable
+2018-06-06 00:30:59 ERROR (Thread-15) [homeassistant.util.yaml] expected '<document start>', but found '<block mapping start>'
+  in "/home/homeassistant/.homeassistant/groups.yaml", line 9, column 1
+2018-06-06 00:33:30 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_protocol.py", line 381, in start
+    resp = await self._request_handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_app.py", line 322, in _handle
+    resp = await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_middlewares.py", line 88, in impl
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/static.py", line 68, in staticresource_middleware
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/real_ip.py", line 27, in real_ip_middleware
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/ban.py", line 68, in ban_middleware
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/auth.py", line 28, in auth_middleware
+    return await handler(request)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/http/view.py", line 98, in handle
+    result = await result
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/config/core.py", line 24, in post
+    errors = yield from async_check_ha_config_file(request.app['hass'])
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/config.py", line 690, in async_check_ha_config_file
+    check_ha_config_file, hass)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 380, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 304, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/scripts/check_config.py", line 347, in check_ha_config_file
+    config = component.CONFIG_SCHEMA(config)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 267, in __call__
+    return self._compiled([], data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 587, in validate_dict
+    return base_validate(path, iteritems(data), out)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 379, in validate_mapping
+    cval = cvalue(key_path, value)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 769, in validate_callable
+    return schema(data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 267, in __call__
+    return self._compiled([], data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 587, in validate_dict
+    return base_validate(path, iteritems(data), out)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 379, in validate_mapping
+    cval = cvalue(key_path, value)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/validators.py", line 204, in _run
+    return self._exec(self._compiled, value, path)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/validators.py", line 282, in _exec
+    v = func(path, v)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 769, in validate_callable
+    return schema(data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 267, in __call__
+    return self._compiled([], data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 587, in validate_dict
+    return base_validate(path, iteritems(data), out)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 379, in validate_mapping
+    cval = cvalue(key_path, value)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/validators.py", line 204, in _run
+    return self._exec(self._compiled, value, path)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/validators.py", line 249, in _exec
+    return func(path, v)
+  File "/srv/homeassistant/lib/python3.5/site-packages/voluptuous/schema_builder.py", line 769, in validate_callable
+    return schema(data)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/config_validation.py", line 177, in entity_ids
+    return [entity_id(ent_id) for ent_id in value]
+TypeError: 'bool' object is not iterable
+2018-06-06 00:33:46 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 00:35:18 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 00:41:01 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 00:51:29 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 00:54:03 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 07:37:02 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 11:35:47 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 12:10:50 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2018-06-06 12:14:50 ERROR (MainThread) [aiohttp.access] Error in logging
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 501, in __get__
+    return inst._cache[self.name]
+KeyError: 'remote'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 465, in log
+    for key, value in fmt_info:
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 457, in <genexpr>
+    for key, method in self._methods)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 415, in _format_a
+    ip = request.remote
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/helpers.py", line 503, in __get__
+    val = self.wrapped(inst)
+  File "/srv/homeassistant/lib/python3.5/site-packages/aiohttp/web_request.py", line 332, in remote
+    peername = self.transport.get_extra_info('peername')
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 306, in get_extra_info
+    return self._ssl_protocol._get_extra_info(name, default)
+  File "/usr/lib/python3.5/asyncio/sslproto.py", line 546, in _get_extra_info
+    return self._transport.get_extra_info(name, default)
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'

@@ -1,0 +1,95 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 21.0333
+  longitude: 105.85
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Asia/Ho_Chi_Minh
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+# introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: gaumeo.duckdns.org:8123
+  ssl_certificate: /home/homeassistant/dehydrated/certs/gaumeo.duckdns.org/fullchain.pem
+  ssl_key: /home/homeassistant/dehydrated/certs/gaumeo.duckdns.org/privkey.pem
+  base_url: gaumeo.duckdns.org:8123
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# Weather prediction
+sensor:
+  - platform: yr
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+# Door Window Sensor_158d000155f09d: Cửa trước tầng 2
+# Door Window Sensor_158d0001838ae1: Cửa trước tầng 1
+# Door Window Sensor_158d0001a4a72e: Cửa sau tầng 1
+
+xiaomi_aqara:
+  gateways:
+    - host: 192.168.1.143
+      mac: 78:11:dc:b0:5f:69
+      key: tpxmvu4k20p3dgr7
+
+switch:
+  - platform: broadlink
+    host: 192.168.1.3
+    mac: 'b4:43:0d:f9:35:0d'
+    timeout: 15
+    switches:
+      # Will work on most Daikin Air:
+      air_daikin:
+        friendly_name: "Điều hòa Daikin"
+        command_on: 'JgBMAadEDTkNFQ0WDRUNOQ0VDRYNFQ0WDTgOFQ05DTgNFg05DTgNOQ05DTkNFQ0WDTgNFg0VDRYNFQ0VDRYNOQ04DjgNOQ05DRUNOQ05DRUNFg0VDRUNFg0VDRYNFQ0VDRYNFQ0WDTgNOQ05DTkNFQ0WDRUNFQ0AA8OnRA44DRYNFQ0VDTkNFg0VDRUNFg04DhUNOQ04DhUNOQ04DjgNOQ05DRUNFg04DhUNFQ0WDRUNFg0VDRUNFg0VDRYNOA05DRUOFQ05DRUNOQ05DTgOFQ0VDRYNOA44DRYNFQ05DRUNFg0VDTkNFQ0WDRUNFQ4VDRUNFg0VDRUOFQ0VDRYNFQ0WDRUNFQ0WDRUNFg0VDRUOOA0WDRUNOQ0VDRYNOA0WDTgOFQ0VDhUNFQ0WDRUNFQ4VDTgOFQ0VDRYNFQ0WDRUNFQ44DTkNFQ44DRYNAA0FAAAAAAAAAAAAAAAA'
+        command_off: 'JgBMAadEDTkNFQ0WDRUNOQ0VDRYNFQ0WDTgOFQ05DTgNFg05DTgNOQ05DTkNFQ0WDTgNFg0VDRYNFQ0VDRYNOQ04DjgNOQ05DRUNOQ05DRUNFg0VDRUNFg0VDRYNFQ0VDRYNFQ0WDTgNOQ05DTkNFQ0WDRUNFQ0AA8OnRA44DRYNFQ0VDTkNFg0VDRUNFg04DhUNOQ04DhUNOQ04DjgNOQ05DRUNFg04DhUNFQ0WDRUNFg0VDRUNFg0VDRYNOA05DRUOFQ05DRUNOQ05DTgOFQ0VDRYNOA44DRYNFQ05DRUNFg0VDTkNFQ0WDRUNFQ4VDRUNFg0VDRUOFQ0VDRYNFQ0WDRUNFQ0WDRUNFg0VDRUOOA0WDRUNOQ0VDRYNOA0WDTgOFQ0VDhUNFQ0WDRUNFQ4VDTgOFQ0VDRYNFQ0WDRUNFQ44DTkNFQ44DRYNAA0FAAAAAAAAAAAAAAAA'

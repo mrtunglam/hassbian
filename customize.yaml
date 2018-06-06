@@ -1,0 +1,6 @@
+sun.sun:
+  friendly_name: Mặt trời
+group.all_switches:
+  friendly_name: all switchs
+switch.air_daikin:
+  friendly_name: Daikin

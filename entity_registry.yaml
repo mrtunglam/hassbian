@@ -1,0 +1,20 @@
+sensor.illumination_7811dcb05f69:
+  name: Mi Hub
+  platform: xiaomi_aqara
+  unique_id: illumination7811dcb05f69
+binary_sensor.door_window_sensor_158d0001a4a72e:
+  name: Cửa sau tầng 1
+  platform: xiaomi_aqara
+  unique_id: status158d0001a4a72e
+binary_sensor.door_window_sensor_158d000155f09d:
+  name: Cửa trước tầng 2
+  platform: xiaomi_aqara
+  unique_id: status158d000155f09d
+binary_sensor.door_window_sensor_158d0001838ae1:
+  name: Cửa trước tầng 1
+  platform: xiaomi_aqara
+  unique_id: status158d0001838ae1
+light.gateway_light_7811dcb05f69:
+  name: Light_7811dcb05f69
+  platform: xiaomi_aqara
+  unique_id: rgb7811dcb05f69

@@ -1,0 +1,30 @@
+  default_view:
+    name: Home
+    icon: mdi:home-variant
+    view: yes
+    entities:
+      - group.Weather
+      - group.System
+      - group.Betroom
+      
+  Betroom:
+    name: Phòng ngủ
+    view: no
+    entities:
+    - switch.air_daikin
+  Weather:
+    name: Thời tiết
+    view: no
+    entities:
+    - sun.sun
+  System:
+    name: Hệ thống
+    view: yes
+    entities:  
+    - sensor.processor_use
+    - sensor.memory_free
+    - sensor.memory_use_percent
+    - sensor.load_5m
+    - sensor.load_15m
+    - sensor.disk_free_home
+    - updater.updater
