@@ -24,7 +24,7 @@ config:
 
 http:
   # Secrets are defined in the file secrets.yaml
-  # api_password: !secret http_password
+  api_password: tunglam1988
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: gaumeo.duckdns.org:8123
   ssl_certificate: /home/homeassistant/dehydrated/certs/gaumeo.duckdns.org/fullchain.pem
@@ -58,9 +58,26 @@ map:
 sun:
 
 # Weather prediction
+
 sensor:
   - platform: yr
-
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: memory_use_percent
+      - type: processor_use
+      - type: load_5m
+      - type: load_15m
+      - type: last_boot
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'date_time'
+      - 'time_date'
+      - 'time_utc'
 # Text to speech
 tts:
   - platform: google
@@ -76,11 +93,29 @@ script: !include scripts.yaml
 # Door Window Sensor_158d0001838ae1: Cửa trước tầng 1
 # Door Window Sensor_158d0001a4a72e: Cửa sau tầng 1
 
-xiaomi_aqara:
-  gateways:
-    - host: 192.168.1.143
-      mac: 78:11:dc:b0:5f:69
-      key: tpxmvu4k20p3dgr7
+climate:
+  - platform: broadlink
+    name: Daikin
+    host: 192.168.1.3
+    mac: 'b4:43:0d:f9:35:0d'
+    ircodes_ini: 'broadlink_climate_codes/daikin.ini'
+    min_temp: 16
+    max_temp: 30
+    target_temp: 25
+    target_temp_step: 1
+    temp_sensor: sensor.living_room_temperature
+    default_operation: cool
+    default_fan_mode: mid
+    customize:
+      operations:
+        - idle
+        - cool
+
+      fan_modes:
+        - low
+        - mid
+        - high
+        - auto
 
 switch:
   - platform: broadlink
@@ -88,8 +123,8 @@ switch:
     mac: 'b4:43:0d:f9:35:0d'
     timeout: 15
     switches:
-      # Will work on most Daikin Air:
+      # Will work on most Phillips TVs:
       air_daikin:
-        friendly_name: "Điều hòa Daikin"
-        command_on: 'JgBMAadEDTkNFQ0WDRUNOQ0VDRYNFQ0WDTgOFQ05DTgNFg05DTgNOQ05DTkNFQ0WDTgNFg0VDRYNFQ0VDRYNOQ04DjgNOQ05DRUNOQ05DRUNFg0VDRUNFg0VDRYNFQ0VDRYNFQ0WDTgNOQ05DTkNFQ0WDRUNFQ0AA8OnRA44DRYNFQ0VDTkNFg0VDRUNFg04DhUNOQ04DhUNOQ04DjgNOQ05DRUNFg04DhUNFQ0WDRUNFg0VDRUNFg0VDRYNOA05DRUOFQ05DRUNOQ05DTgOFQ0VDRYNOA44DRYNFQ05DRUNFg0VDTkNFQ0WDRUNFQ4VDRUNFg0VDRUOFQ0VDRYNFQ0WDRUNFQ0WDRUNFg0VDRUOOA0WDRUNOQ0VDRYNOA0WDTgOFQ0VDhUNFQ0WDRUNFQ4VDTgOFQ0VDRYNFQ0WDRUNFQ44DTkNFQ44DRYNAA0FAAAAAAAAAAAAAAAA'
-        command_off: 'JgBMAadEDTkNFQ0WDRUNOQ0VDRYNFQ0WDTgOFQ05DTgNFg05DTgNOQ05DTkNFQ0WDTgNFg0VDRYNFQ0VDRYNOQ04DjgNOQ05DRUNOQ05DRUNFg0VDRUNFg0VDRYNFQ0VDRYNFQ0WDTgNOQ05DTkNFQ0WDRUNFQ0AA8OnRA44DRYNFQ0VDTkNFg0VDRUNFg04DhUNOQ04DhUNOQ04DjgNOQ05DRUNFg04DhUNFQ0WDRUNFg0VDRUNFg0VDRYNOA05DRUOFQ05DRUNOQ05DTgOFQ0VDRYNOA44DRYNFQ05DRUNFg0VDTkNFQ0WDRUNFQ4VDRUNFg0VDRUOFQ0VDRYNFQ0WDRUNFQ0WDRUNFg0VDRUOOA0WDRUNOQ0VDRYNOA0WDTgOFQ0VDhUNFQ0WDRUNFQ4VDTgOFQ0VDRYNFQ0WDRUNFQ44DTkNFQ44DRYNAA0FAAAAAAAAAAAAAAAA'
+        friendly_name: "Điều hòa"
+        command_on: 'JgBMAadEDTkNFgwWDRUNOQsYCxcNFQ0WDTkMFg05DTkLFw05CzsLOgs7DTkNFQ0WDTkLFw0VDRYLFwsYDBYNOQ05DDkNOQ05DRYMOQ05CxgKGA0VDRYMFg0WDBYNFQ0WCxcNFgwWDTkNOQw5DTkLGAwWDRULGAwAA8SmRQ05DRUNFgwWDTkNFQ0WDBYNFQ05DRYMOQ05DRYMOQ05DTkNOQ05DBYNFQ05DRYNFQ0WDBYNFQ0WDRUNFgwWDRUNOQ05DRUNFg05DBYNOQ05DDkNFg0VDRYNOA05DRYNFQ05DRUNFg0VDTkNFQ0WDRUNFQ0WDRUNFg0VDRYMFg0VDRYNFQ0WDRUNFQ0WDRUNFg0VDTkNOQ0VDRUNOQ0WDRUNOQ0VDTkNFQ0WDRUNFg0VDRUNFg0VDTkNFQ0WDRUNFg0VDTkNFQ05DTkNFQ05DRYNAA0FAAAAAAAAAAAAAAAA'
+        command_off: 'JgBMAaRHCzsMFgwXCxcLOwwWDBcLFwsYCjsMFws6DDoMFws6DDoMOgw6CzsMFgwXCzoLGAsXCxgKGAsXDBcLOws6CzsMOgw6DBYMOgs7CxcMFwsXCxcLGAsXCxgLFwsXCxgMFgsYCzoMOgw6CzsMFgwXCxcLFwwAA8WkRws6CxgMFgwXDDkMFwsXDBcLFww6DBYLOww6CxcMOgs7DDoLOgw6CxgMFgs7DBYLGAsXCxgKGAsXCxgLFwsYCxcMOgs7CxcLFws7CxgLOgs7CxgLFwwWCxgMOgs6CxgLFws7CxcLGAwWCzsMFgwXDBYLGAsXCxcLGAsXDBcLFwwXCxcLFwwXDBYMFwoYDBYLGAsXCzsMOgsXCxgLOgwXCxcLOwwWCzsLGAsXCxcLGAsXDBcLFwwWCzsLGAwWCxgKGAw6CxcLGAo7DDoLGAs6CxgLAA0FAAAAAAAAAAAAAAAA'

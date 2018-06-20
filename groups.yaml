@@ -4,22 +4,25 @@
     view: yes
     entities:
       - group.Weather
-      - group.System
       - group.Betroom
-      
+      - group.Time
+      - group.System
   Betroom:
     name: Phòng ngủ
     view: no
     entities:
+    - climate.Daikin
     - switch.air_daikin
   Weather:
     name: Thời tiết
     view: no
     entities:
     - sun.sun
+    - sensor.yr_symbol
   System:
     name: Hệ thống
-    view: yes
+    view: no
+    icon: mdi:settings-outline
     entities:  
     - sensor.processor_use
     - sensor.memory_free
@@ -28,3 +31,12 @@
     - sensor.load_15m
     - sensor.disk_free_home
     - updater.updater
+  Time:
+    name: Thời gian
+    view: no
+    entities:  
+    - sensor.time
+    - sensor.date
+    - sensor.time_date
+    - sensor.date_time
+    - sensor.time_utc

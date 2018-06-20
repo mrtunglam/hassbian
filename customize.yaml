@@ -2,5 +2,7 @@ sun.sun:
   friendly_name: Mặt trời
 group.all_switches:
   friendly_name: all switchs
-switch.air_daikin:
-  friendly_name: Daikin
+climate.daikin:
+  friendly_name: Điều hòa
+  target_temp_step: 1
+group.system: {}
