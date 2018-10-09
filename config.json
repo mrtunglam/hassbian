@@ -1,6 +1,6 @@
 {
   "system": {
-    "name": "Nhà của Cún Kute",
+    "name": "Nhà GauMeoTho",
     "language": "vn-VI",
     "debug": false,
     "tempUnit": "°C",
@@ -10,8 +10,8 @@
     }
   },
   "yahoo": {
-    "code": 1117099,
-    "cityName": "Fukuoka",
+    "code": 1236594,
+    "cityName": "Hà Nội",
     "tempUnit": "C"
   },
   "topButton": {
