@@ -138,7 +138,7 @@
   }, {
     "name": "Barthroom",
     "component": "room",
-    "light": "switch.barthroom_light",
+    "light": "switch.den_phong_ngu",
     "fan": false,
     "icon": "mdi mdi-shower",
     "doorSensor": "binary_sensor.barthroom_door",
