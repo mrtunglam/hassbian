@@ -110,11 +110,11 @@
       "entity": "input_boolean.system_sleep_mode"
     }]
   }, {
-    "name": "Main Light",
+    "name": "Đèn phòng khách",
     "icon": "mdi mdi-ceiling-light",
     "component": "light",
-    "power": "switch.main_light_power",
-    "sleepMode": "switch.main_light_sleep",
+    "power": "switch.den_phong_khach",
+    "sleepMode": "switch.den_phong_khach",
     "brightnessLevel": "input_number.main_light_brightness",
     "colors": false,
     "modal": true,
@@ -123,10 +123,10 @@
     "timeWakeupStatus": "input_boolean.main_light_wake_up",
     "timeWakeup": "input_datetime.main_light_wake_up"
   }, {
-    "name": "Front Light",
+    "name": "Đèn bếp",
     "icon": "mdi mdi-lightbulb-on",
     "component": "light",
-    "power": "switch.front_light",
+    "power": "switch.den_bep",
     "brightness_level": false,
     "colors": false,
     "modal": false,
